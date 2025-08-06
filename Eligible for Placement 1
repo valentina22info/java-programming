@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner ph = new Scanner(System.in);
+        String str = ph.nextLine();
+        int arr = ph.nextInt();
+        int cgpa = ph.nextInt();
+        
+        System.out.println("Name of the Student:" + str);
+        if (cgpa > 70 && arr == 1) {
+            
+            System.out.println(str + " is Eligible for Placement");
+        } 
+        else if (cgpa > 75 && arr == 2) {
+   
+            System.out.println(str + " is Eligible for Placement");
+        } 
+        else {
+            System.out.println(str + " is Not Eligible for Placement");
+        }
+
+    }
+}
