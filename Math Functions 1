@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+    Scanner ph = new Scanner(System.in);
+        float a = ph.nextFloat();
+        int b = ph.nextInt();
+        int c = ph.nextInt();
+        int d = ph.nextInt();
+        int floorvalue = (int)Math.floor(a);
+        int ceilvalue = (int)Math.ceil(a);
+        int sqrtvalue = (int)Math.sqrt(b);
+        int pow = (int)Math.pow(c,d);
+        System.out.println(floorvalue);
+        System.out.println(ceilvalue);
+        System.out.println(sqrtvalue);
+        System.out.println(pow);
+    
+
+    }
+}
