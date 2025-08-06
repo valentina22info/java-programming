@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+    Scanner ph = new Scanner(System.in);
+    int a = ph.nextInt();
+    int b = ph.nextInt();
+    int c = ph.nextInt();
+    if(a > b){
+        if(a > c){
+            System.out.println("a is largest than b and c ");
+              } else {
+                System.out.println("c is largest then a and b");
+            }
+        } else {
+            if (b > c) {
+                System.out.println("b is largest then a and c");
+            } else {
+                System.out.println("c is largest then a and b");
+            }
+    }
+}
+}
