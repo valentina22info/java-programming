@@ -7,18 +7,16 @@ import java.util.regex.*;
 public class Solution {
 
     public static void main(String[] args) {
-        Scanner pp = new Scanner(System.in);
-        char sc = pp.next().charAt(0);  // fixed: CharAt -> charAt
+       Scanner ph=new Scanner(System.in);
+        char cr =ph.next().charAt(0);
+        if(cr=='a' || cr=='e' || cr=='i' || cr=='o' || cr=='u' || cr=='A' || cr=='E' || cr=='I' || cr=='O' || cr=='U'){
+            System.out.println("The Character " + cr + " is Vowel");
+        }
+        else{
+            System.out.println("The Character "+ cr +" is Consonant");
 
-        if (!Character.isLetter(sc)) {
-            System.out.println("Invalid Input");
-        } else {
-            char lowerChar = Character.toLowerCase(sc);
-            if (lowerChar == 'a' || lowerChar == 'e' || lowerChar == 'i' || lowerChar == 'o' || lowerChar == 'u') {
-                System.out.println("The Character " + sc + " is Vowel");
-            } else {
-                System.out.println("The Character " + sc + " is Consonant");
-            }
         }
     }
 }
+    
+    
