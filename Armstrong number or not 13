@@ -7,21 +7,23 @@ import java.util.regex.*;
 public class Solution {
 
     public static void main(String[] args) {
-        Scanner ph = new Scanner(System.in);
+       Scanner ph = new Scanner(System.in);
         int n = ph.nextInt();
-       int len = 0, sum = 0;
-        for (int i = n; i > 0; i /= 10) {
-          len++;
-          }
-        for (int j = n; j > 0; j /= 10) {
-           sum += Math.pow(j % 10, len);
-          }
-        if(sum == n){
-        System.out.println("Yes");
-         }
-        else{
+        int sum = 0;
+        int temp = n;
+        if (n >= 100 && n <= 999) {
+            while (temp > 0) {
+                int digit = temp % 10;
+                sum += Math.pow(digit, 3);
+                temp /= 10;
+            }
+            if (sum == n) {
+                System.out.println("Yes");
+            } else {
+                System.out.println("No");
+            }
+        } else {
             System.out.println("No");
         }
-    }     
+    }
 }
-    
