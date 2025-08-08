@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+         Scanner ph = new Scanner(System.in);
+        int n = ph.nextInt();        
+        if (n <= 0 || n > 1000000000) {
+            System.out.println("Invalid Input");
+            return;
+        }   
+        else{
+        int sum = 0;        
+        while (n != 0) {
+            int digit = n % 10;
+            sum = sum * 10 + digit;
+            n /= 10;
+        }       
+        System.out.println(sum);    
+    }
+}
+}
+    
