@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner ph = new Scanner(System.in);
+        int n = ph.nextInt();
+        
+        float sum =0;
+        
+        int a[] = new int[n];
+        for(int i=0;i<n;i++){
+            a[i] = ph.nextInt();
+        }
+        for(int i=0;i<n;i++){
+            sum += a[i];
+        }
+        
+        float mean = sum/n;
+        System.out.printf("Array Mean Value is %.2f" , mean);
+    }
+}
