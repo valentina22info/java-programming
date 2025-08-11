@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String[] args) {
+       Scanner sh = new Scanner(System.in);
+        int size = sh.nextInt();
+        if (size < 0) {
+            System.out.println("Invalid Input");
+        }
+        int[] a = new int[size];
+        for (int i = 0; i < size; i++) {
+            a[i] = sh.nextInt();
+            if (a[i] < 0) {
+                System.out.println("Invalid Input");
+            }
+        }
+        Arrays.sort(a);
+        System.out.println("Youngest=" + a[0]);
+        System.out.println("Oldest=" + a[a.length - 1]);
+    }
+}
