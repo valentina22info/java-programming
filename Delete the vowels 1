@@ -1,0 +1,15 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner ph = new Scanner(System.in);
+        String str = ph.nextLine();
+        String str1 = str.replaceAll("[AEIOUaeiou]","");
+        System.out.println(str1);
+    }
+}
