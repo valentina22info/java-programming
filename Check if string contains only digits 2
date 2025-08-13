@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner ph = new Scanner(System.in);
+        String str = ph.nextLine();
+        if (str.matches("[0-9]+")) {  
+            System.out.println("only digits");
+        } else {
+            System.out.println("no");
+        }
+    }
+}
