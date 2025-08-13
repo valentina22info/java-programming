@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sh = new Scanner(System.in);
+        String a = sh.nextLine();
+        int vowels = a.toLowerCase().replaceAll("[^aeiou]", "").length();
+        int consonants = a.toLowerCase().replaceAll("[^a-z]", "").length() - vowels;
+        int digits = a.replaceAll("[^0-9]", "").length();
+        int spchrs = a.replaceAll("[a-zA-Z0-9\\s]", "").length();
+        System.out.println("vowels:" + vowels);
+        System.out.println("consonants:" + consonants);
+        System.out.println("digits:" + digits);
+        System.out.println("special characters:" + spchrs);
+    }
+}
